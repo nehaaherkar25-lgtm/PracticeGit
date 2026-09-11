@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="5" total="9" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-09-02T12:35:04 IST" name="All Test Suite" finished-at="2026-09-02T12:35:29 IST" duration-ms="25033">
+    <groups>
+      <group name="Smoke">
+        <method signature="EcommAddToCartCalendarPageination_Streams.pagination()[pri:0, instance:org.example.EcommAddToCartCalendarPageination_Streams@62e136d3]" name="pagination" class="org.example.EcommAddToCartCalendarPageination_Streams"/>
+        <method signature="RelativeLocatorsAndAssignment2InvokeWindowTab.relativeLocPract()[pri:0, instance:org.example.RelativeLocatorsAndAssignment2InvokeWindowTab@6279cee3]" name="relativeLocPract" class="org.example.RelativeLocatorsAndAssignment2InvokeWindowTab"/>
+        <method signature="ChromeOptionsPractice.sslCert(java.lang.String)[pri:0, instance:org.example.ChromeOptionsPractice@4f9a3314]" name="sslCert" class="org.example.ChromeOptionsPractice"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test started-at="2026-09-02T12:35:04 IST" name="SeleniumPractice" finished-at="2026-09-02T12:35:29 IST" duration-ms="25033">
+      <class name="org.example.EcommAddToCartCalendarPageination_Streams">
+        <test-method signature="filterCheck()[pri:0, instance:org.example.EcommAddToCartCalendarPageination_Streams@62e136d3]" started-at="2026-09-02T12:35:20 IST" name="filterCheck" finished-at="2026-09-02T12:35:23 IST" duration-ms="3274" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filterCheck -->
+        <test-method signature="pagination()[pri:0, instance:org.example.EcommAddToCartCalendarPageination_Streams@62e136d3]" started-at="2026-09-02T12:35:23 IST" name="pagination" finished-at="2026-09-02T12:35:26 IST" depends-on-methods="org.example.EcommAddToCartCalendarPageination_Streams.filterCheck" duration-ms="3672" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pagination -->
+      </class> <!-- org.example.EcommAddToCartCalendarPageination_Streams -->
+      <class name="org.example.ChromeOptionsPractice">
+        <test-method signature="sslCert(java.lang.String)[pri:0, instance:org.example.ChromeOptionsPractice@4f9a3314]" started-at="2026-09-02T12:35:04 IST" name="sslCert" finished-at="2026-09-02T12:35:19 IST" duration-ms="15692" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://expired.badssl.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sslCert -->
+      </class> <!-- org.example.ChromeOptionsPractice -->
+      <class name="org.example.RelativeLocatorsAndAssignment2InvokeWindowTab">
+        <test-method signature="relativeLocPract()[pri:0, instance:org.example.RelativeLocatorsAndAssignment2InvokeWindowTab@6279cee3]" started-at="2026-09-02T12:35:26 IST" name="relativeLocPract" finished-at="2026-09-02T12:35:29 IST" duration-ms="2262" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- relativeLocPract -->
+      </class> <!-- org.example.RelativeLocatorsAndAssignment2InvokeWindowTab -->
+    </test> <!-- SeleniumPractice -->
+  </suite> <!-- All Test Suite -->
+</testng-results>

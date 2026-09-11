@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="org.example.Listeners"/>
+    </listeners>
+    <test name="SeleniumPractice">
+        <parameter name="URL" value="https://expired.badssl.com/"/>
+        <groups>
+            <run>
+                <include name="Smoke"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="org.example.ChromeOptionsPractice">
+                <methods>
+                    <exclude name="disableLocPractice"/>
+                </methods>
+            </class>
+            <class name="org.example.EcommAddToCartCalendarPageination_Streams">
+                <methods>
+                    <include name="pagination"/>
+                </methods>
+            </class>
+            <class name="org.example.FramesPractice"/>
+            <class name="org.example.RelativeLocatorsAndAssignment2InvokeWindowTab"/>
+            <class name="org.example.BaseDataProvider" />
+        </classes>
+    </test>
+</suite>

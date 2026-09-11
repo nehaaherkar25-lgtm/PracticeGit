@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="SeleniumPractice">
+        <classes>
+            <class name="org.example.ActionsPractice"/>
+            <class name="org.example.AlertsPractice"/>
+            <class name="org.example.ChromeOptionsPractice">
+                <methods>
+                    <include name="sslCert"/>
+                    <include name="disableLocPractice"/>
+                </methods>
+            </class>
+            <class name="org.example.CookiesPractice"/>
+            <class name="org.example.DropDownsPractice">
+                <methods>
+                    <exclude name="dropDownAssignment"/>
+                </methods>
+            </class>
+            <class name="org.example.E2EScreenshotLinksPractice">
+                <methods>
+                    <include name="linksPracticeWithoutOpening"/>
+                </methods>
+            </class>
+            <class name="org.example.EcommAddToCartCalendarPageination_Streams">
+                <methods>
+                    <include name="addItemsToCart"/>
+                    <include name="calendarPractice"/>
+                    <include name="pagination"/>
+                    <include name="filterCheck"/>
+                </methods>
+            </class>
+            <class name="org.example.FramesPractice"/>
+            <class name="org.example.LocatorsAndNavigatePractice"/>
+            <class name="org.example.RelativeLocatorsAndAssignment2InvokeWindowTab">
+                <methods>
+                    <include name="assignUIInvokeWindowTab"/>
+                    <include name="relativeLocPract"/>
+                </methods>
+            </class>
+            <class name="org.example.ScrollPractice"/>
+            <class name="org.example.StreamsPractice"/>
+            <class name="org.example.SynchornizationWaitsPractice"/>
+            <class name="org.example.WindowHandlePractice"/>
+        </classes>
+    </test>
+</suite>

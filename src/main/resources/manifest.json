@@ -1,0 +1,6 @@
+{
+  "manifest_version": 3,
+  "name": "My Selenium Test Extension",
+  "version": "1.0",
+  "description": "Extension for Selenium ChromeOptions practice"
+}
