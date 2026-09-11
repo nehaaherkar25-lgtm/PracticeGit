@@ -33,19 +33,15 @@ public class WindowHandlePractice {
         driver.manage().window().maximize();
 
         /*driver.findElement(By.partialLinkText("Free Access to InterviewQues")).click();
-
         Set<String> windows = driver.getWindowHandles();
         Iterator<String> it = windows.iterator();
         String parent = it.next();
         String child = it.next();
         driver.switchTo().window(child);
-
         driver.findElement(By.cssSelector(".im-para.red")).getText();
         String email = driver.findElement(By.cssSelector(".im-para.red")).getText().split("at")[1].trim().split(" ")[0];
-
         driver.switchTo().window(parent);
         driver.findElement(By.cssSelector("input#username")).sendKeys(email);*/
-
 
         driver.get("https://the-internet.herokuapp.com/");
         driver.findElement(By.xpath("//a[text()='Multiple Windows']")).click();
@@ -53,7 +49,6 @@ public class WindowHandlePractice {
         //w.until(ExpectedConditions.visibilityOfElementLocated(By.className("example")));
         String parentWindow = driver.getWindowHandle();
         driver.findElement(By.linkText("Click Here")).click();
-
         Set<String> windows = driver.getWindowHandles();
         windows.size();
 
@@ -63,9 +58,7 @@ public class WindowHandlePractice {
             if(!nextW.equalsIgnoreCase(parentWindow)) {
                 driver.switchTo().window(nextW);
                 System.out.println(driver.findElement(By.tagName("h3")).getText());
-                driver.close();
-            }
-        }*/
+                driver.close();}}*/
 
         for(String win: windows){
             if(!win.equals(parentWindow)){
