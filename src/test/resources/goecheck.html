@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Geolocation Test</title>
+</head>
+
+<body>
+
+<h2>Geolocation Test</h2>
+
+<button id="getLocation">Get Location</button>
+
+<p id="result">Location not checked</p>
+
+<script>
+
+    document.getElementById("getLocation").addEventListener("click", function () {
+
+        navigator.geolocation.getCurrentPosition(
+
+            function(position) {
+
+                let latitude = position.coords.latitude;
+                let longitude = position.coords.longitude;
+
+                document.getElementById("result").innerText =
+                    "Latitude: " + latitude +
+                    ", Longitude: " + longitude;
+            },
+
+            function(error) {
+                document.getElementById("result").innerText =
+                    "Error: " + error.message;
+            }
+        );
+
+    });
+
+</script>
+
+</body>
+</html>
